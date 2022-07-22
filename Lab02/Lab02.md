@@ -1,6 +1,6 @@
 # Lab 02
 ## Requirements
-- Draw an xy-coordinate system, pixel scales are set by ourselves
+- Draw an XY-coordinate system, pixel scales are set by ourselves
 - Draw a shape for each of the quadrants
 - The length of the longest side is 10
 - Allow user to select x, y values through checkboxes

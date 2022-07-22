@@ -5,16 +5,10 @@ public class NameDrawer {
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
             MyPanel panel = new MyPanel();
-
             drawKanjis(panel);
             drawBGs(panel);
 
-            JFrame window = new JFrame("21321108 Huang Yiyu");
-            window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-            window.setPreferredSize(new Dimension(700, 400));
-            window.getContentPane().add(panel);
-            window.pack();
-            window.setVisible(true);
+            generateWindow(panel);
         });
     }
 
@@ -56,5 +50,14 @@ public class NameDrawer {
                 230,30,180,180,MyRect.GREEN,
                 430,30,180,180,MyRect.BLUE
         );
+    }
+
+    private static void generateWindow(MyPanel panel) {
+        JFrame window = new JFrame("21321108 Huang Yiyu");
+        window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        window.setPreferredSize(new Dimension(655, 280));
+        window.getContentPane().add(panel);
+        window.pack();
+        window.setVisible(true);
     }
 }
